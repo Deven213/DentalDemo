@@ -22,8 +22,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="container" style={{ padding: '5rem 0' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+        <div className="container section-padding">
+            <div className="grid-2">
 
                 {/* Contact Info */}
                 <div>
@@ -92,7 +92,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                        <div className="input-group-2">
                             <div>
                                 <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>Phone Number</label>
                                 <input

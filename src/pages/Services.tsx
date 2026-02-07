@@ -54,13 +54,13 @@ const servicesList = [
 
 const Services = () => {
     return (
-        <div className="container" style={{ padding: '5rem 0' }}>
+        <div className="container section-padding">
             <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                 <h1 className="section-title">Our Treatments & Services</h1>
                 <p className="section-subtitle">We offer a full range of dental procedures using state-of-the-art technology.</p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '2rem' }}>
                 {servicesList.map((service, index) => (
                     <div key={index} style={{
                         backgroundColor: 'var(--white)',

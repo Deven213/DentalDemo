@@ -21,16 +21,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="nav-links" style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-                    <style>{`
-            @media (max-width: 768px) {
-              .nav-links { display: none !important; }
-              .mobile-toggle { display: block !important; }
-            }
-            @media (min-width: 769px) {
-              .mobile-toggle { display: none !important; }
-            }
-          `}</style>
+                <div className="nav-links">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/services">Services</Link>
@@ -42,7 +33,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Toggle */}
-                <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)} style={{ background: 'none', border: 'none', color: 'var(--primary)' }}>
+                <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>

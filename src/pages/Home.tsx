@@ -6,16 +6,16 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section style={{
+            {/* Hero Section */}
+            <section className="section-padding" style={{
                 background: 'linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%)',
-                padding: '5rem 0',
                 textAlign: 'center'
             }}>
                 <div className="container">
-                    <h1 style={{ fontSize: '3.5rem', fontWeight: '800', color: 'var(--primary)', marginBottom: '1rem', lineHeight: 1.2 }}>
+                    <h1 className="hero-title">
                         Your Smile, Our Priority
                     </h1>
-                    <p style={{ fontSize: '1.25rem', color: 'var(--text-light)', marginBottom: '2rem', maxWidth: '700px', margin: '0 auto 2rem' }}>
+                    <p className="hero-text">
                         Advanced dental care with experienced doctors and modern technology. We ensure a pain-free and comfortable experience for your family.
                     </p>
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
@@ -43,7 +43,7 @@ const Home = () => {
             </section>
 
             {/* Services Preview */}
-            <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-light)' }}>
+            <section className="section-padding" style={{ backgroundColor: 'var(--bg-light)' }}>
                 <div className="container">
                     <h2 className="section-title">Our Services</h2>
                     <p className="section-subtitle">Comprehensive dental solutions for a healthy smile.</p>
@@ -76,8 +76,8 @@ const Home = () => {
             </section>
 
             {/* Why Choose Us */}
-            <section style={{ padding: '5rem 0' }}>
-                <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+            <section className="section-padding">
+                <div className="container grid-2">
                     <div>
                         <img
                             src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
@@ -112,7 +112,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Testimonials */}
-            <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-light)' }}>
+            <section className="section-padding" style={{ backgroundColor: 'var(--bg-light)' }}>
                 <div className="container">
                     <h2 className="section-title">Patient Stories</h2>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
